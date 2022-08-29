@@ -26,9 +26,13 @@ final class ViewController: UIViewController {
     @IBOutlet private weak var datePicker: UIDatePicker!
     @IBOutlet private weak var pickerView: UIPickerView!
     
+    var samples = ["りんご","すいか","バナナ","いちご"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        pickerView.delegate = self
+        pickerView.dataSource = self
     }
     
     private func reset() {
@@ -62,5 +66,28 @@ final class ViewController: UIViewController {
     @IBAction private func sliderAction(_ sender: UISlider) {
         label.text = String(sender.value * 100)
     }
+    
+    
+    @IBAction func getDate(_ sender: Any) {
+        
+        label.text = "\(datePicker.date)"
+    }
 }
 
+extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        
+        return 1
+    }
+    
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return samples.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        let sample = samples[row]
+        return sample
+    }
+}
