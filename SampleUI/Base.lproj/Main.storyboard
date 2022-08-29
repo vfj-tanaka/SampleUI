@@ -143,16 +143,27 @@
                                                         <rect key="frame" x="20" y="20" width="374" height="778"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="evI-4E-OYD">
-                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="478"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="397"/>
                                                                 <subviews>
-                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="J9Y-t8-CNM">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="229"/>
-                                                                    </datePicker>
                                                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SmJ-Bf-8Ia">
-                                                                        <rect key="frame" x="0.0" y="249" width="374" height="229"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="188.5"/>
                                                                     </pickerView>
+                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="J9Y-t8-CNM">
+                                                                        <rect key="frame" x="0.0" y="208.5" width="374" height="188.5"/>
+                                                                    </datePicker>
                                                                 </subviews>
                                                             </stackView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3A6-Hk-PER">
+                                                                <rect key="frame" x="0.0" y="447" width="374" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="31" id="fSg-On-Pu5"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="GetDate"/>
+                                                                <connections>
+                                                                    <action selector="getDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="18N-y6-yw1"/>
+                                                                </connections>
+                                                            </button>
                                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lAQ-ci-ddr">
                                                                 <rect key="frame" x="0.0" y="528" width="374" height="250"/>
                                                                 <constraints>
@@ -228,7 +239,7 @@
                 <viewControllerPlaceholder storyboardName="Sample" id="Enp-az-B2N" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dOi-Js-TFx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="739" y="133"/>
+            <point key="canvasLocation" x="725" y="98"/>
         </scene>
     </scenes>
     <resources>
