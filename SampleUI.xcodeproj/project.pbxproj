@@ -16,6 +16,8 @@
 		FC3F21A328936BEB0059E855 /* SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F21A228936BEB0059E855 /* SampleUITests.swift */; };
 		FC3F21AD28936BEB0059E855 /* SampleUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F21AC28936BEB0059E855 /* SampleUIUITests.swift */; };
 		FC3F21AF28936BEB0059E855 /* SampleUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F21AE28936BEB0059E855 /* SampleUIUITestsLaunchTests.swift */; };
+		FC86676A28BC1F9C00A757C6 /* Sample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC86676928BC1F9C00A757C6 /* Sample.storyboard */; };
+		FC86676C28BC1FBA00A757C6 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC86676B28BC1FBA00A757C6 /* SampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		FC3F21A828936BEB0059E855 /* SampleUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3F21AC28936BEB0059E855 /* SampleUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUIUITests.swift; sourceTree = "<group>"; };
 		FC3F21AE28936BEB0059E855 /* SampleUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FC86676928BC1F9C00A757C6 /* Sample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sample.storyboard; sourceTree = "<group>"; };
+		FC86676B28BC1FBA00A757C6 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +105,10 @@
 			children = (
 				FC3F218B28936BE30059E855 /* AppDelegate.swift */,
 				FC3F218D28936BE30059E855 /* SceneDelegate.swift */,
-				FC3F218F28936BE30059E855 /* ViewController.swift */,
 				FC3F219128936BE30059E855 /* Main.storyboard */,
+				FC3F218F28936BE30059E855 /* ViewController.swift */,
+				FC86676928BC1F9C00A757C6 /* Sample.storyboard */,
+				FC86676B28BC1FBA00A757C6 /* SampleViewController.swift */,
 				FC3F219428936BEB0059E855 /* Assets.xcassets */,
 				FC3F219628936BEB0059E855 /* LaunchScreen.storyboard */,
 				FC3F219928936BEB0059E855 /* Info.plist */,
@@ -233,6 +239,7 @@
 			files = (
 				FC3F219828936BEB0059E855 /* LaunchScreen.storyboard in Resources */,
 				FC3F219528936BEB0059E855 /* Assets.xcassets in Resources */,
+				FC86676A28BC1F9C00A757C6 /* Sample.storyboard in Resources */,
 				FC3F219328936BE30059E855 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +267,7 @@
 			files = (
 				FC3F219028936BE30059E855 /* ViewController.swift in Sources */,
 				FC3F218C28936BE30059E855 /* AppDelegate.swift in Sources */,
+				FC86676C28BC1FBA00A757C6 /* SampleViewController.swift in Sources */,
 				FC3F218E28936BE30059E855 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
